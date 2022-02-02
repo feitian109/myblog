@@ -1,1 +1,1 @@
-it's just a blog.
+It's just a blog.
