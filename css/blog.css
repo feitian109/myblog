@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 7px;
+}
+
+@media screen and (min-width: 310px) {
+    html {
+        font-size: 8.5px;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    html {
+        font-size: 9.5px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 11.5px;
+    }
+}
+
+body {
+    background: #26283d;
+}
+
+p {
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.ps * {
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+p.ps {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+p.alert {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #26283d;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #26283d;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+a {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    color: #26283d;
+}
+
+a.button {
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.15);
+    user-select: none;
+    transition: background-color 0.5s;
+}
+
+a.button:hover {
+    background-color: #eeeeee;
+}
+
+.hide {
+    display: none;
+}
+
+.small_lineheight {
+    line-height: 2.4rem;
+}
+
+.middle_lineheight {
+    line-height: 4rem;
+}
+
+.big_lineheight {
+    line-height: 6rem;
+}
+
+.nav {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav .logo {
+    position: relative;
+    left: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    user-select: none;
+}
+
+.nav .logo a:hover {
+    text-decoration: underline;
+}
+
+.nav .link {
+    position: relative;
+    right: 5%;
+    min-width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .link div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.nav .link div:hover {
+    background-color: #26283d;
+}
+
+.nav .link a {
+    padding: 0.9rem 2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #26283d;
+    transition: color 0.3s;
+}
+
+.nav .link a:hover {
+    color: #eaeaec;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article_container {
+    width: 95%;
+    margin-top: 8rem;
+}
+
+.article {
+    height: max-content;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 3rem;
+    box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.card_container {
+    width: 95%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_container .card {
+    width: 100%;
+    height: max-content;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 3rem;
+    box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.card_container .card * {
+    margin-bottom: 1.5rem;
+}
+
+.card_container .card *:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1020px) {
+    .main {
+        width: 90%;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .article_container {
+        width: 67%;
+        margin-bottom: 6rem;
+    }
+
+    .card_container {
+        width: 25%;
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main {
+        width: 80%;
+    }
+
+    .article_container {
+        width: 57%;
+    }
+
+    .card_container {
+        width: 23%;
+    }
+}
