@@ -57,10 +57,10 @@ p {
 
 .ps * {
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-p.ps {
+.ps p {
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -102,6 +102,10 @@ a.button:hover {
     display: none;
 }
 
+.very_small_lineheight{
+    line-height: 1.2rem;
+}
+
 .small_lineheight {
     line-height: 2.4rem;
 }
@@ -112,6 +116,11 @@ a.button:hover {
 
 .big_lineheight {
     line-height: 6rem;
+}
+
+::selection{
+    color: #eeeeee;
+    background-color: #3d405e;
 }
 
 .nav {
@@ -126,6 +135,7 @@ a.button:hover {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    user-select: none;
 }
 
 .nav .logo {
@@ -139,7 +149,6 @@ a.button:hover {
 .nav .logo a {
     font-size: 2.4rem;
     text-decoration: none;
-    user-select: none;
 }
 
 .nav .logo a:hover {
@@ -175,7 +184,7 @@ a.button:hover {
 }
 
 .nav .link a:hover {
-    color: #eaeaec;
+    color: #eeeeee;
 }
 
 .main {
@@ -202,8 +211,7 @@ a.button:hover {
 
 .card_container {
     width: 95%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -214,6 +222,7 @@ a.button:hover {
     width: 100%;
     height: max-content;
     padding: 3rem;
+    margin-bottom: 4rem;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 3rem;
     box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
@@ -231,6 +240,21 @@ a.button:hover {
 
 .card_container .card *:last-child {
     margin-bottom: 0;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 1.2rem;
+    color: #eeeeee;
 }
 
 @media screen and (min-width: 1020px) {
