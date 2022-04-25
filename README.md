@@ -1,1 +1,1 @@
-It's just a blog.
+A very simple blog demo.
